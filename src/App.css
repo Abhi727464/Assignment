@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+/* Add button styling */
+.add-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-button:hover {
+  background-color: #218838;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Input field styling */
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Input section styling */
+.input-section {
   display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Flexbox Container */
+.flex-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Product Card */
+.product-card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  max-width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-card h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Loading Spinner */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin: 20px 0;
 }
